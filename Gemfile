@@ -68,4 +68,4 @@ gem 'spree_gateway', '~> 3.3'
 
 gem 'spree_amazon_like_dropdown', github: 'fiftin/spree_amazon_like_dropdown', branch: '3-6-stable'
 gem 'spree_add_to_cart_ajax', github: 'fiftin/spree_add_to_cart_ajax', branch: '3-6-stable'
-gem 'spree_analytics_trackers', github: 'fiftin/spree_analytics_trackers', branch: '3-6-stable'
+#gem 'spree_analytics_trackers', github: 'fiftin/spree_analytics_trackers', branch: '3-6-stable'
