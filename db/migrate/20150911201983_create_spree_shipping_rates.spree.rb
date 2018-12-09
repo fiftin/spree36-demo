@@ -1,5 +1,5 @@
 # This migration comes from spree (originally 20130304162240)
-class CreateSpreeShippingRates < ActiveRecord::Migration
+class CreateSpreeShippingRates < ActiveRecord::Migration[4.2]
   def up
     create_table :spree_shipping_rates do |t|
       t.belongs_to :shipment

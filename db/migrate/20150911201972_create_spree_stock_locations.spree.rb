@@ -1,5 +1,5 @@
 # This migration comes from spree (originally 20130211191120)
-class CreateSpreeStockLocations < ActiveRecord::Migration
+class CreateSpreeStockLocations < ActiveRecord::Migration[4.2]
   def change
     create_table :spree_stock_locations do |t|
       t.string :name

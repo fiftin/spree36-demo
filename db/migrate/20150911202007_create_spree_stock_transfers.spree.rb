@@ -1,5 +1,5 @@
 # This migration comes from spree (originally 20130418125341)
-class CreateSpreeStockTransfers < ActiveRecord::Migration
+class CreateSpreeStockTransfers < ActiveRecord::Migration[4.2]
   def change
     create_table :spree_stock_transfers do |t|
       t.string :type

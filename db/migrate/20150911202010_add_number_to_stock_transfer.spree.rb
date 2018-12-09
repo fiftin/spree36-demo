@@ -1,5 +1,5 @@
 # This migration comes from spree (originally 20130509115210)
-class AddNumberToStockTransfer < ActiveRecord::Migration
+class AddNumberToStockTransfer < ActiveRecord::Migration[4.2]
   def up
     remove_index :spree_stock_transfers, :source_location_id
     remove_index :spree_stock_transfers, :destination_location_id

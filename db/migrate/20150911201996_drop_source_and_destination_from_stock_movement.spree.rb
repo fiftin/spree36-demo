@@ -1,5 +1,5 @@
 # This migration comes from spree (originally 20130319190507)
-class DropSourceAndDestinationFromStockMovement < ActiveRecord::Migration
+class DropSourceAndDestinationFromStockMovement < ActiveRecord::Migration[4.2]
   def up
     change_table :spree_stock_movements do |t|
       t.remove_references :source, :polymorphic => true

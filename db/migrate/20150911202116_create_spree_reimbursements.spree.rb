@@ -1,5 +1,5 @@
 # This migration comes from spree (originally 20140725131539)
-class CreateSpreeReimbursements < ActiveRecord::Migration
+class CreateSpreeReimbursements < ActiveRecord::Migration[4.2]
   def change
     create_table :spree_reimbursements do |t|
       t.string :number

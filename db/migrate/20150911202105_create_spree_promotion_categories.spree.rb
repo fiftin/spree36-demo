@@ -1,5 +1,5 @@
 # This migration comes from spree (originally 20140715182625)
-class CreateSpreePromotionCategories < ActiveRecord::Migration
+class CreateSpreePromotionCategories < ActiveRecord::Migration[4.2]
   def change
     create_table :spree_promotion_categories do |t|
       t.string :name

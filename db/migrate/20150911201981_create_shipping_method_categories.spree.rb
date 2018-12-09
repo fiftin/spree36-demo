@@ -1,5 +1,5 @@
 # This migration comes from spree (originally 20130301162924)
-class CreateShippingMethodCategories < ActiveRecord::Migration
+class CreateShippingMethodCategories < ActiveRecord::Migration[4.2]
   def change
     create_table :spree_shipping_method_categories do |t|
       t.integer :shipping_method_id, :null => false

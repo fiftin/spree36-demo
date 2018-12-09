@@ -1,5 +1,5 @@
 # This migration comes from spree (originally 20130328130308)
-class UpdateShipmentStateForCanceledOrders < ActiveRecord::Migration
+class UpdateShipmentStateForCanceledOrders < ActiveRecord::Migration[4.2]
   def up
     shipments = Spree::Shipment.joins(:order).
       where("spree_orders.state = 'canceled'")

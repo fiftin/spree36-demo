@@ -1,5 +1,5 @@
 # This migration comes from spree (originally 20150609093816)
-class IncreaseScaleOnPreTaxAmounts < ActiveRecord::Migration
+class IncreaseScaleOnPreTaxAmounts < ActiveRecord::Migration[4.2]
   def change
     # set pre_tax_amount on shipments to discounted_amount - included_tax_total
     # so that the null: false option on the shipment pre_tax_amount doesn't generate

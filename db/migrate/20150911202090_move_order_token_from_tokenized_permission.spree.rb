@@ -1,5 +1,5 @@
 # This migration comes from spree (originally 20140530024945)
-class MoveOrderTokenFromTokenizedPermission < ActiveRecord::Migration
+class MoveOrderTokenFromTokenizedPermission < ActiveRecord::Migration[4.2]
   class Spree::TokenizedPermission < Spree::Base
     belongs_to :permissable, polymorphic: true
   end

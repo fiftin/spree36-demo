@@ -1,5 +1,5 @@
 # This migration comes from spree (originally 20130228210442)
-class CreateShippingMethodZone < ActiveRecord::Migration
+class CreateShippingMethodZone < ActiveRecord::Migration[4.2]
   def up
     create_table :shipping_methods_zones, :id => false do |t|
       t.integer :shipping_method_id

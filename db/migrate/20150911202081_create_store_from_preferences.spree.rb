@@ -1,5 +1,5 @@
 # This migration comes from spree (originally 20140309033438)
-class CreateStoreFromPreferences < ActiveRecord::Migration
+class CreateStoreFromPreferences < ActiveRecord::Migration[4.2]
   def change
     # workaround for spree_i18n and Store translations
     Spree::Store.class_eval do

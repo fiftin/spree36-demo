@@ -1,5 +1,5 @@
 # This migration comes from spree (originally 20130830001033)
-class AddShippingCategoryToShippingMethodsAndProducts < ActiveRecord::Migration
+class AddShippingCategoryToShippingMethodsAndProducts < ActiveRecord::Migration[4.2]
   def up
     default_category = Spree::ShippingCategory.first
     default_category ||= Spree::ShippingCategory.create!(:name => "Default")

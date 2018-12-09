@@ -1,5 +1,5 @@
 # This migration comes from spree (originally 20120831092359)
-class SpreePromoOneTwo < ActiveRecord::Migration
+class SpreePromoOneTwo < ActiveRecord::Migration[4.2]
   def up
     # This migration is just a compressed migration for all previous versions of spree_promo
     return if table_exists?(:spree_products_promotion_rules)

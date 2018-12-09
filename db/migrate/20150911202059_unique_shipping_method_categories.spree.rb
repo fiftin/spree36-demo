@@ -1,5 +1,5 @@
 # This migration comes from spree (originally 20131211192741)
-class UniqueShippingMethodCategories < ActiveRecord::Migration
+class UniqueShippingMethodCategories < ActiveRecord::Migration[4.2]
   def change
     klass   = Spree::ShippingMethodCategory
     columns = %w[shipping_category_id shipping_method_id]

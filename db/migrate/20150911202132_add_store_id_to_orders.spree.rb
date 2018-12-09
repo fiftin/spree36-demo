@@ -1,5 +1,5 @@
 # This migration comes from spree (originally 20141009204607)
-class AddStoreIdToOrders < ActiveRecord::Migration
+class AddStoreIdToOrders < ActiveRecord::Migration[4.2]
   def change
     add_column :spree_orders, :store_id, :integer
     if Spree::Store.default.persisted?

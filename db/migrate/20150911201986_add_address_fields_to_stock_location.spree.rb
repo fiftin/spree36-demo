@@ -1,5 +1,5 @@
 # This migration comes from spree (originally 20130306181701)
-class AddAddressFieldsToStockLocation < ActiveRecord::Migration
+class AddAddressFieldsToStockLocation < ActiveRecord::Migration[4.2]
   def change
     remove_column :spree_stock_locations, :address_id
 

@@ -1,5 +1,5 @@
 # This migration comes from spree (originally 20121031162139)
-class SplitPricesFromVariants < ActiveRecord::Migration
+class SplitPricesFromVariants < ActiveRecord::Migration[4.2]
   def up
     create_table :spree_prices do |t|
       t.integer :variant_id, :null => false
@@ -25,7 +25,7 @@ class SplitPricesFromVariants < ActiveRecord::Migration
     prices.each do |price|
       ActiveRecord::Base.connection.execute("update spree_variants set price = #{price['amount']} where id = #{price['variant_id']}")
     end
-    
+
     change_column :spree_variants, :price, :decimal, :after => :sku, :scale => 2, :precision => 8, :null => false
     drop_table :spree_prices
   end

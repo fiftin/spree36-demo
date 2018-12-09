@@ -1,5 +1,5 @@
 # This migration comes from spree (originally 20140309024355)
-class CreateSpreeStores < ActiveRecord::Migration
+class CreateSpreeStores < ActiveRecord::Migration[4.2]
   def change
     if table_exists?(:spree_stores)
       rename_column :spree_stores, :domains, :url

@@ -1,5 +1,5 @@
 # This migration comes from spree (originally 20130828234942)
-class AddTaxTotalToLineItemsShipmentsAndOrders < ActiveRecord::Migration
+class AddTaxTotalToLineItemsShipmentsAndOrders < ActiveRecord::Migration[4.2]
   def change
     add_column :spree_line_items, :tax_total, :decimal, precision: 10, scale: 2, default: 0.0
     add_column :spree_shipments, :tax_total, :decimal, precision: 10, scale: 2, default: 0.0

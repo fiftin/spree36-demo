@@ -1,5 +1,5 @@
 # This migration comes from spree (originally 20131118183431)
-class AddLineItemIdToSpreeInventoryUnits < ActiveRecord::Migration
+class AddLineItemIdToSpreeInventoryUnits < ActiveRecord::Migration[4.2]
   def change
     # Stores running the product-assembly extension already have a line_item_id column
     unless column_exists? Spree::InventoryUnit.table_name, :line_item_id

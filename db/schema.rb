@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_08_191417) do
+ActiveRecord::Schema.define(version: 2018_12_08_181707) do
 
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
@@ -743,6 +743,17 @@ ActiveRecord::Schema.define(version: 2018_12_08_191417) do
     t.index ["shipment_id"], name: "index_spree_shipping_rates_on_shipment_id"
     t.index ["shipping_method_id"], name: "index_spree_shipping_rates_on_shipping_method_id"
     t.index ["tax_rate_id"], name: "index_spree_shipping_rates_on_tax_rate_id"
+  end
+
+  create_table "spree_skrill_transactions", force: :cascade do |t|
+    t.string "email"
+    t.float "amount"
+    t.string "currency"
+    t.integer "transaction_id"
+    t.integer "customer_id"
+    t.string "payment_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "spree_state_changes", force: :cascade do |t|
