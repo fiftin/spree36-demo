@@ -1,24 +1,7 @@
-# README
+Source code of website which demonstrates abilities of [Spree Commerce 3.6](https://github.com/spree/spree/tree/3-6-stable) engine on Rails 5.2.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### How to run?
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+rails server
+```
