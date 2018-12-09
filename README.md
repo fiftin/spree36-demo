@@ -8,5 +8,8 @@ The demo website includes next extensions:
 ### How to run?
 
 ```
+git clone https://github.com/fiftin/spree36-demo
+cd spree36-demo
+rake db:migrate
 rails server
 ```
