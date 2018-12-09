@@ -10,3 +10,10 @@
  *= require spree/frontend/spree_amazon_like_dropdown
  *= require spree/frontend/spree_add_to_cart_ajax
 */
+#spree-header #logo img {
+    height: 40px !important;
+}
+
+#spree-header {
+    padding-top: 0 !important;
+}
