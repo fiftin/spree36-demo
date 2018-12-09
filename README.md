@@ -1,4 +1,4 @@
-![Logo](http://spree36-demo.herokuapp.com/assets/logo/spree_50-0ae687ccd486b63b01687b1df9e5394430f6fce3ab40c28250b179be4363ddc1.png)
+![Logo](https://raw.githubusercontent.com/spree/spree/3-6-stable/spree_logo.png)
 
 Source code of website which demonstrates abilities of [Spree Commerce 3.6](https://github.com/spree/spree/tree/3-6-stable) engine on Rails 5.2.
 
